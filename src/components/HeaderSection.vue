@@ -1,28 +1,28 @@
 <script setup>
-import { headerNav } from "@/constants/index"
+import { headerNav } from "@/constants/index";
 </script>
 
 <template>
-    <header id="header" role="banner">
+    <header id="header" role="heading">
         <div class="header__inner">
-            <div class="header__logo">
-                <a href="#">portfolio <em>vite</em></a>
-            </div>
+            <h1 class="header__logo">
+                <a href="#">portfolio<em>vue.js</em></a>
+            </h1>
             <nav class="header__nav" role="navigation" aria-label="메인 메뉴" :class="{ show: isNavVisible }">
                 <ul>
                     <li v-for="(nav, key) in headerNav" :key="key">
-                        <a :href="nav.url" @click="navlink($event)">{{ nav.title }}</a>
+                        <a :href="nav.url" @click="scrollLink($event)">{{ nav.title }}</a>
                     </li>
                 </ul>
             </nav>
-            <div class="header__nav__mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="false"
-                role="button" :aria-expanded="isNavVisible.toString()" @click="toggleMobileMenu">
+            <div class="header__nav__mobile" id="headerToggle" aria-controls="primary-menu"
+                :aria-expanded="isNavVisible.toString()" @click="toggleMobileMenu">
                 <span></span>
             </div>
         </div>
     </header>
-    <!-- //header -->
 </template>
+
 <script>
 export default {
     data() {
