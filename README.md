@@ -24,7 +24,8 @@ Vue.js는 다른 프레임워크인 React나 Angular와 비슷한 기능을 제�
 √ Add an End-to-End Testing Solution? » No      
 √ Add ESLint for code quality? ... No / <span="color: blue">Yes</span>      
 
-## [미리보기] https://vue-project334.vercel.app/
+## 사이트 미리보기
+[미리보기] https://vue-project334.vercel.app/
 
 ## 작업 순서
 1. 리액트 설치
